@@ -1,5 +1,6 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+const htmls = require("./html.config.js");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -19,6 +20,10 @@ module.exports = {
         include: path.resolve(__dirname, "src"),
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      }
     ],
   },
   resolve: {
@@ -26,7 +31,7 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: "src/index.html", to: "index.html" }],
+      patterns: htmls,
     }),
   ],
   output: {
@@ -35,3 +40,4 @@ module.exports = {
     clean: true,
   },
 };
+

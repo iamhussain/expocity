@@ -1,6 +1,4 @@
 import "./styles/index.css";
-const main = () => {
-  console.log("Code with Ahsan, Hello World 123!");
-};
+const header = require('./common/header.html').default
+document.getElementById("header").innerHTML = header;
 
-main();
