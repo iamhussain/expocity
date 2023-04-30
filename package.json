@@ -1,7 +1,7 @@
 {
   "name": "typescript-tailwind-webpack-starter",
   "version": "1.0.0",
-  "description": "A modern Webpack 5, Tailwind CSS 3, and TypeScript Web Apps Starter Template",
+  "description": "Expo City Dubai",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development --open",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Muhammad Ahsan Ayaz<ahsan.ubitian@gmail.com>",
+  "author": "Hussain Bootwala<hussain.bootwala@expocitydubai.ae>",
   "license": "MIT",
   "devDependencies": {
     "copy-webpack-plugin": "^10.1.0",
