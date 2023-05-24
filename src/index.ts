@@ -1,8 +1,32 @@
 import "./styles/index.css";
-const header = require('./common/header.html').default
-document.getElementById("header").innerHTML = header;
+import "./index.js"
+import { Carousel, Select, Collapse, Input, initTE } from "tw-elements";
 
-const NonLoggedheader = require('./common/nonLogin-header.html').default
-document.getElementById("nonLogged-header").innerHTML = NonLoggedheader;
+document.onreadystatechange = () => {
+    if (document.readyState === "interactive") {
+      console.log('interactive');
+      const header = require('./common/header.html').default
+      const nonLoggedheader = require('./common/nonLogin-header.html').default
 
+      const loginHeader = document.getElementById("nonLogged-header")
+      const mainHeader = document.getElementById("header")
+
+      if(loginHeader){
+          loginHeader.innerHTML = nonLoggedheader
+      }
+
+      if(mainHeader){
+          mainHeader.innerHTML = header
+      }    
+    
+      
+    }
+    if (document.readyState === "complete") {
+      console.log('complete');
+      initTE({ Input,Carousel,Select,Collapse});
+      
+      
+
+    }
+  };
 

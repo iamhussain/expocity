@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visa Application</title>
+    <script src="../../bundle.js"></script>
+  </head>
+  <body class="font-expo text-[14px]">
+    <header id="header"></header>
+    <div
+      class="container mt-[-89px] bg-white mx-auto p-[40px] rounded-[12px] shadow-xl"
+    >
+      <form class="form">
+        <div class="grid grid-cols-12 p-4 gap-[24px]">
+          <section class="col-start-3 col-end-11">
+            <div
+              class="section-title flex align-center w-full justify-between border-b-[1px] border-background-grey mb-4"
+            >
+              General
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 9.5L8.5 13.5074L8.5 15.5L15.5 15.5L15.5 13.5076L12 9.5Z"
+                  fill="#48C2E0"
+                />
+              </svg>
+            </div>
+            <div class="grid grid-cols-2 gap-[24px]">
+              <div class="fieldset">
+                <select
+                  required
+                  data-parsley-trigger="change"
+                  data-te-select-init
+                  data-te-class-form-check-input="border-primary-100"
+                >
+                  <option></option>
+                  <option value="1">Investor</option>
+                  <option value="2">Employee</option>
+                </select>
+                <label data-te-select-label-ref
+                  >Applicant category <span class="text-red">*</span></label
+                >
+              </div>
+              <div class="fieldset">
+                <select
+                  data-te-select-init
+                  data-te-class-form-check-input="border-primary-100"
+                  required
+                >
+                  <option></option>
+                  <option value="1">Inside UAE</option>
+                  <option value="2">Outside UAE</option>
+                </select>
+                <label data-te-select-label-ref
+                  >Applicant location <span class="text-red">*</span></label
+                >
+              </div>
+              <div class="fieldset">
+                <select
+                  data-te-select-init
+                  data-te-class-form-check-input="border-primary-100"
+                  required
+                >
+                  <option></option>
+                  <option value="1">Normal</option>
+                  <option value="2">Urgent</option>
+                </select>
+                <label data-te-select-label-ref
+                  >Applicant priority <span class="text-red">*</span></label
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="col-start-3 col-end-11 mt-[80px]">
+            <div
+              class="section-title flex align-center w-full justify-between border-b-[1px] border-background-grey mb-4"
+            >
+              PERSONAL
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 9.5L8.5 13.5074L8.5 15.5L15.5 15.5L15.5 13.5076L12 9.5Z"
+                  fill="#48C2E0"
+                />
+              </svg>
+            </div>
+            <div class="grid grid-cols-2 gap-[24px]">
+              <div>
+                <input
+                  type="file"
+                  id="input-id"
+                  class="input-file"
+                  name="file-data"
+                  data-show-caption="true"
+                  required
+                />
+              </div>
+              <div class="text-neutral-60 font-size-[12px]">
+                <p>10 KB to 100 KB / JPG, PNG, PDF only</p>
+                <p>Clear scanned copy of the passport front and back pages</p>
+              </div>
+              <div class="relative mb-3 fieldset" data-te-input-wrapper-init>
+                <input
+                  type="text"
+                  class="peer input-field peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="fn"
+                  placeholder="First name"
+                  required
+                />
+                <label
+                  for="fn"
+                  class="input-label peer-focus:-translate-y-[1.2rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                  >First name <span class="text-red">*</span>
+                </label>
+              </div>
+              <div class="relative mb-3 fieldset" data-te-input-wrapper-init>
+                <input
+                  type="text"
+                  class="peer input-field peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="fn"
+                  placeholder="Middle name"
+                  required
+                />
+                <label
+                  for="fn"
+                  class="input-label peer-focus:-translate-y-[1.2rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                  >Middle name <span class="text-red">*</span>
+                </label>
+              </div>
+              <div class="relative mb-3 fieldset" data-te-input-wrapper-init>
+                <input
+                  type="text"
+                  class="peer input-field peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="fn"
+                  placeholder="Last name"
+                  required
+                />
+                <label
+                  for="fn"
+                  class="input-label peer-focus:-translate-y-[1.2rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                  >Last name <span class="text-red">*</span>
+                </label>
+              </div>
+              <div class="fieldset">
+                <select
+                  data-te-select-init
+                  data-te-class-form-check-input="border-primary-100"
+                  required
+                >
+                  <option></option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+                <label data-te-select-label-ref
+                  >Gender <span class="text-red">*</span></label
+                >
+              </div>
+              <div
+                class="relative mb-3 fieldset"
+                data-te-datepicker-init
+                data-te-input-wrapper-init
+              >
+                <input
+                  type="text"
+                  class="peer input-field block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  placeholder="Select a date"
+                  required
+                />
+                <label
+                  for="floatingInput"
+                  class="input-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                  >Date of birth <span class="text-red">*</span></label
+                >
+              </div>
+              <div class="fieldset">
+                <select
+                  data-te-select-init
+                  data-te-class-form-check-input="border-primary-100"
+                  required
+                >
+                  <option></option>
+                  <option value="0">Single</option>
+                  <option value="1">Married</option>
+                  <option value="2">Unmarried</option>
+                  <option value="2">Divorced</option>
+                  <option value="2">Separated</option>
+                </select>
+                <label data-te-select-label-ref
+                  >Marital status <span class="text-red">*</span></label
+                >
+              </div>
+              <div class="relative mb-3 fieldset" data-te-input-wrapper-init>
+                <input
+                  type="text"
+                  class="peer input-field peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="fn"
+                  placeholder="Place of birth"
+                  required
+                />
+                <label
+                  for="fn"
+                  class="input-label peer-focus:-translate-y-[1.2rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                  >Place of birth <span class="text-red">*</span>
+                </label>
+              </div>
+              <div class="fieldset">
+                <select
+                  data-te-select-init
+                  data-te-class-form-check-input="border-primary-100"
+                  required
+                >
+                  <option></option>
+                  <option value="0">USA</option>
+                  <option value="1">UAE</option>
+                  <option value="2">India</option>
+                  <option value="2">Pakistan</option>
+                  <option value="2">China</option>
+                </select>
+                <label data-te-select-label-ref
+                  >Country of birth <span class="text-red">*</span></label
+                >
+              </div>
+            </div>
+          </section>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

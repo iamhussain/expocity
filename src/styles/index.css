@@ -2,3 +2,128 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Expo Sans Std';
+    src: local('Expo Sans Std Black'), local('ExpoSansStd-Black'),
+       url('../assets/fonts/ExpoSansStd-Black.woff2') format('woff2'),
+       url('../assets/fonts/ExpoSansStd-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Sans Std';
+    src: local('Expo Sans Std Thin'), local('ExpoSansStd-Thin'),
+       url('../assets/fonts/ExpoSansStd-Thin.woff2') format('woff2'),
+       url('../assets/fonts/ExpoSansStd-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Sans Std';
+    src: local('Expo Sans Std Bold'), local('ExpoSansStd-Bold'),
+       url('../assets/fonts/ExpoSansStd-Bold.woff2') format('woff2'),
+       url('../assets/fonts/ExpoSansStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Sans Std';
+    src: local('Expo Sans Std SemiBold'), local('ExpoSansStd-SemiBold'),
+       url('../assets/fonts/ExpoSansStd-SemiBold.woff2') format('woff2'),
+       url('../assets/fonts/ExpoSansStd-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Sans Std';
+    src: local('Expo Sans Std Light'), local('ExpoSansStd-Light'),
+       url('../assets/fonts/ExpoSansStd-Light.woff2') format('woff2'),
+       url('../assets/fonts/ExpoSansStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Sans Std';
+    src: local('Expo Sans Std Medium'), local('ExpoSansStd-Medium'),
+       url('../assets/fonts/ExpoSansStd-Medium.woff2') format('woff2'),
+       url('../assets/fonts/ExpoSansStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Sans Std Book';
+    src: local('Expo Sans Std Book'), local('ExpoSansStd-Book'),
+       url('../assets/fonts/ExpoSansStd-Book.woff2') format('woff2'),
+       url('../assets/fonts/ExpoSansStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* div[data-te-select-form-outline-ref] input{
+    @apply border-[1px] border-primary-100
+} */
+.input-field, .input-group input{
+    @apply block min-h-[52px] w-full rounded border-0 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear
+}
+.input-group{
+    @apply border-[1px] rounded-md border-neutral-10
+}
+input[data-te-select-input-ref]{
+    @apply  min-h-[52px] rounded-xl
+}
+label[data-te-select-label-ref]{
+    @apply leading-[2.6]
+}
+input[data-te-select-input-ref]:focus ~ label[data-te-select-label-ref], input[data-te-select-input-ref] ~ label[data-te-input-state-active]{
+    @apply translate-y-[-1.2rem]
+}
+.input-label{
+   @apply pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.6] transition-all duration-200 ease-out
+}
+div[data-te-input-state-active] div[data-te-input-notch-middle-ref]{
+    @apply border-t-0
+}
+.file-input .input-group-append{
+    @apply absolute right-0 top-0
+}
+.parsley-error-list{
+    @apply bg-red text-white
+}
+.input-group{
+    @apply relative
+}
+
+@layer components{
+    .fieldset{
+        @apply relative
+    }
+    .input-file{
+        @apply opacity-0
+    }
+    /* .select{
+        @apply w-full border-[1px] border-neutral-10 rounded-lg min-h-[52px] shadow-none
+    } */
+    /* .select:focus{
+        @apply border-primary shadow-none
+    }
+    .select ~ label{
+        @apply absolute left-[15px] top-[16px]
+    }
+    .parsley-success ~ label{
+        @apply opacity-0
+    } */
+}
+

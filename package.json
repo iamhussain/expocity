@@ -12,6 +12,10 @@
   "author": "Hussain Bootwala<hussain.bootwala@expocitydubai.ae>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "@tailwindcss/forms": "^0.5.3",
+    "babel-loader": "^9.1.2",
     "copy-webpack-plugin": "^10.1.0",
     "css-loader": "^6.5.1",
     "html-loader": "^4.2.0",
@@ -26,5 +30,11 @@
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "bootstrap-fileinput": "^5.5.2",
+    "jquery": "^3.7.0",
+    "parsleyjs": "^2.9.2",
+    "tw-elements": "*"
   }
 }

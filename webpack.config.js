@@ -11,6 +11,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
@@ -23,7 +28,15 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: 'html-loader',
-      }
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   resolve: {
@@ -31,8 +44,8 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: htmls,
-    }),
+      patterns: htmls,  
+    })
   ],
   output: {
     filename: "bundle.js",
