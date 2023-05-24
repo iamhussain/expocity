@@ -73,14 +73,12 @@
 }
 
 /* div[data-te-select-form-outline-ref] input{
-    @apply border-[1px] border-primary-100
+    @apply border-[1px] border-orange-100
 } */
-.input-field, .input-group input{
-    @apply block min-h-[52px] w-full rounded border-0 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear
+.input-field, .input-group input, input[data-te-select-input-ref]{
+    @apply block min-h-[52px] w-full rounded-[12px] px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear border-[1px] border-neutral-10 bg-transparent
 }
-.input-group{
-    @apply border-[1px] rounded-md border-neutral-10
-}
+
 input[data-te-select-input-ref]{
     @apply  min-h-[52px] rounded-xl
 }
@@ -90,40 +88,97 @@ label[data-te-select-label-ref]{
 input[data-te-select-input-ref]:focus ~ label[data-te-select-label-ref], input[data-te-select-input-ref] ~ label[data-te-input-state-active]{
     @apply translate-y-[-1.2rem]
 }
-.input-label{
-   @apply pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.6] transition-all duration-200 ease-out
+.input-label, label[data-te-select-label-ref]{
+   @apply pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.6] transition-all duration-200 ease-out text-neutral-500
 }
-div[data-te-input-state-active] div[data-te-input-notch-middle-ref]{
-    @apply border-t-0
+.input-field:focus, input[data-te-select-input-ref]:focus, textarea:focus{
+    @apply border-orange-100 
 }
+.input-field:focus, input[data-te-select-input-ref], textarea:focus{
+    box-shadow: none !important;
+}
+.input-field:focus ~ .input-label, input[data-te-select-input-ref]:focus ~ label[data-te-select-label-ref], textarea:focus ~ label{
+    @apply text-neutral-80 bg-white translate-y-[-1.2rem] scale-[0.8]
+}
+
+div[data-te-input-notch-leading-ref], div[data-te-input-notch-trailing-ref], div[data-te-input-notch-middle-ref]{
+    @apply border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none
+}
+
+
+/* file input upload button */
 .file-input .input-group-append{
-    @apply absolute right-0 top-0
+    @apply absolute right-[6px] top-[6px] cursor-pointer
 }
+/* parsley error */
 .parsley-error-list{
     @apply bg-red text-white
 }
 .input-group{
     @apply relative
 }
-
+/* select arrow icon */
+input[data-te-select-input-ref] ~ span{
+    top: 18px;
+}
+.header-img{
+    background: url(../assets/images/header-bg-logo.png) no-repeat center top;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1228px;
+    height: 270px;
+    transform: translateX(-50%);
+    opacity: .5;
+}
 @layer components{
     .fieldset{
         @apply relative
     }
     .input-file{
-        @apply opacity-0
+        @apply opacity-0 absolute left-0 top-[-5px] cursor-pointer
     }
-    /* .select{
-        @apply w-full border-[1px] border-neutral-10 rounded-lg min-h-[52px] shadow-none
-    } */
-    /* .select:focus{
-        @apply border-primary shadow-none
-    }
-    .select ~ label{
-        @apply absolute left-[15px] top-[16px]
-    }
-    .parsley-success ~ label{
-        @apply opacity-0
-    } */
+   .btn{
+    @apply bg-background-offWhite border-white border-2 rounded-[50px] uppercase font-[12px] leading-[10px] py-[17px] px-[25px] relative tracking-[0.3rem] 
+   }
+   .btn-secondary:hover{
+    @apply text-orange-100
+   }
+
+   .btn{
+    box-shadow: 0 0 1px 2px rgba(251, 187, 3, 0.35);
+   }
+   
+   .btn:after{
+    @apply content-[""] absolute left-0 top-0 border-2 border-orange-100 w-full h-full rounded-[50px]
+   }
+   .btn-primary{
+    @apply bg-gradient-to-r from-[#F1A40E] to-[#FBBB03] 
+   }
+   .btn-primary:hover{
+    @apply bg-gradient-to-r from-[#F1A40E] to-[#F1A40E] 
+   }
+   input[type=checkbox]{
+    @apply bg-white border-black
+   }
+   input[type=checkbox]:hover{
+    @apply bg-orange-200
+   }
+   input[type=checkbox]:before{
+    @apply bg-transparent
+   }
+   input[type=checkbox]:focus{
+    box-shadow: none !important;
+    background: white !important;
+    border: 2px solid black;
+   }
+   
+   /* data preview page */
+   .fieldData label{
+    @apply text-[12px] 
+   }
+   .fieldData .selectedAnswer{
+    @apply font-semibold text-[14px] text-black mt-1
+   }
 }
 

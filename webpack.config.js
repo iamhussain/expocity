@@ -32,10 +32,18 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          // Configure the output path for images
+          filename: 'assets/images/[name][ext]',
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          // Configure the output path for fonts
+          filename: 'assets/fonts/[name][ext]',
+        },
       },
     ],
   },
@@ -44,12 +52,13 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: htmls,  
+      patterns: htmls
     })
   ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
+    // assetModuleFilename: 'assets/[name][ext]',
     clean: true,
   },
 };

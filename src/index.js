@@ -7,7 +7,6 @@ $(document).ready(function () {
     $(".input-file").fileinput({
         allowedFileExtensions: ["jpg", "png", "gif", "pdf"],
         uploadUrl: "/file-upload-batch/2",
-        browseLabel: "Upload file",
         showRemove: false,
         showZoom: false,
         showDrag: false,
@@ -15,8 +14,8 @@ $(document).ready(function () {
         dropZoneEnabled: false,
         showPreview: false,
         showUpload: false,
-        browseIcon: '<img src="../../assets/images/Uploading.svg" />',
-        browseClass: "rounded-[50%] border-2 border-primary w-[40px] h-[40px] flex",
+        browseIcon: '<img src="/assets/images/Uploading.svg" />',
+        browseClass: "rounded-[50%] border-2 border-orange-100 w-[40px] h-[40px] flex p-1",
         browseLabel:"",
         showCancel: false
     });

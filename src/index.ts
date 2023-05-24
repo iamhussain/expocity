@@ -1,6 +1,6 @@
 import "./styles/index.css";
 import "./index.js"
-import { Carousel, Select, Collapse, Input, initTE } from "tw-elements";
+import { Carousel, Select, Collapse, Input, Datepicker, initTE } from "tw-elements";
 
 document.onreadystatechange = () => {
     if (document.readyState === "interactive") {
@@ -23,7 +23,7 @@ document.onreadystatechange = () => {
     }
     if (document.readyState === "complete") {
       console.log('complete');
-      initTE({ Input,Carousel,Select,Collapse});
+      initTE({ Input,Carousel,Select,Collapse, Datepicker});
       
       
 

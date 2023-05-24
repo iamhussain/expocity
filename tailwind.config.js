@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       colors: {
        
-        primary: {
+       current: 'currentColor',
+        orange: {
           100: "#FFCD00",
           110: "#E5B800",
           120: "#CCA400",
@@ -55,7 +56,8 @@ module.exports = {
         black: "#000000",
         grey: "#8E8484",
         red: "#D53939",
-        green: "#2F8339"
+        green: "#2F8339",
+        primary: "#FFCD00"
       },
       fontFamily: {
         expo: ['Expo Sans Std', 'helvetica'],

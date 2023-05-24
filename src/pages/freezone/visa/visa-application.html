@@ -9,233 +9,958 @@
   </head>
   <body class="font-expo text-[14px]">
     <header id="header"></header>
-    <div
-      class="container mt-[-89px] bg-white mx-auto p-[40px] rounded-[12px] shadow-xl"
-    >
+    <div class="container mt-[-89px] bg-white mx-auto p-[40px] rounded-[12px] shadow-xl">
       <form class="form">
         <div class="grid grid-cols-12 p-4 gap-[24px]">
           <section class="col-start-3 col-end-11">
-            <div
-              class="section-title flex align-center w-full justify-between border-b-[1px] border-background-grey mb-4"
-            >
-              General
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 9.5L8.5 13.5074L8.5 15.5L15.5 15.5L15.5 13.5076L12 9.5Z"
-                  fill="#48C2E0"
-                />
-              </svg>
-            </div>
-            <div class="grid grid-cols-2 gap-[24px]">
-              <div class="fieldset">
-                <select
-                  required
-                  data-parsley-trigger="change"
-                  data-te-select-init
-                  data-te-class-form-check-input="border-primary-100"
-                >
-                  <option></option>
-                  <option value="1">Investor</option>
-                  <option value="2">Employee</option>
-                </select>
-                <label data-te-select-label-ref
-                  >Applicant category <span class="text-red">*</span></label
-                >
-              </div>
-              <div class="fieldset">
-                <select
-                  data-te-select-init
-                  data-te-class-form-check-input="border-primary-100"
-                  required
-                >
-                  <option></option>
-                  <option value="1">Inside UAE</option>
-                  <option value="2">Outside UAE</option>
-                </select>
-                <label data-te-select-label-ref
-                  >Applicant location <span class="text-red">*</span></label
-                >
-              </div>
-              <div class="fieldset">
-                <select
-                  data-te-select-init
-                  data-te-class-form-check-input="border-primary-100"
-                  required
-                >
-                  <option></option>
-                  <option value="1">Normal</option>
-                  <option value="2">Urgent</option>
-                </select>
-                <label data-te-select-label-ref
-                  >Applicant priority <span class="text-red">*</span></label
-                >
-              </div>
-            </div>
-          </section>
+            <div id="accordionFlushExample">
+                <div class="rounded-none bg-white mb-[56px]">
+                  <h2 class="mb-0" id="flush-headingOne">
+                    <button
+                      class="group relative flex w-full items-center rounded-none border-0 border-b-[1px] bg-white pb-1 text-left text-[14px] text-tertiary-100 uppercase tracking-[0.2rem] transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-tertiary-100 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                      type="button"
+                      data-te-collapse-init
+                      data-te-target="#flush-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="flush-collapseOne">
+                      General
+                      <span
+                        class="text-center ml-auto shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.99996 6.5L7.5 2.49258L7.5 0.500001L0.50004 0.5L0.5 2.49238L3.99996 6.5Z" fill="#48C2E0"/>
+                            </svg>
+                            
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="!visible border-0"
+                    data-te-collapse-item
+                    data-te-collapse-show
+                    aria-labelledby="flush-headingOne"
+                     >
+                     <div class="grid grid-cols-2 gap-[24px] py-5">
+                      <div class="fieldset">
+                        <select
+                          required
+                          data-parsley-trigger="change"
+                          data-te-select-init
+                        >
+                          <option></option>
+                          <option value="1">Investor</option>
+                          <option value="2">Employee</option>
+                        </select>
+                        <label data-te-select-label-ref
+                          >Applicant category <span class="text-red">*</span></label
+                        >
+                      </div>
+                      <div class="fieldset">
+                        <select
+                          data-te-select-init
+                           
+                          required
+                        >
+                          <option></option>
+                          <option value="1">Inside UAE</option>
+                          <option value="2">Outside UAE</option>
+                        </select>
+                        <label data-te-select-label-ref
+                          >Applicant location <span class="text-red">*</span></label
+                        >
+                      </div>
+                      <div class="fieldset">
+                        <select
+                          data-te-select-init
+                           
+                          required
+                        >
+                          <option></option>
+                          <option value="1">Normal</option>
+                          <option value="2">Urgent</option>
+                        </select>
+                        <label data-te-select-label-ref
+                          >Applicant priority <span class="text-red">*</span></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <section class="col-start-3 col-end-11 mt-[80px]">
-            <div
-              class="section-title flex align-center w-full justify-between border-b-[1px] border-background-grey mb-4"
-            >
-              PERSONAL
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 9.5L8.5 13.5074L8.5 15.5L15.5 15.5L15.5 13.5076L12 9.5Z"
-                  fill="#48C2E0"
-                />
-              </svg>
-            </div>
-            <div class="grid grid-cols-2 gap-[24px]">
-              <div>
-                <input
-                  type="file"
-                  id="input-id"
-                  class="input-file"
-                  name="file-data"
-                  data-show-caption="true"
-                  required
-                />
-              </div>
-              <div class="text-neutral-60 font-size-[12px]">
-                <p>10 KB to 100 KB / JPG, PNG, PDF only</p>
-                <p>Clear scanned copy of the passport front and back pages</p>
-              </div>
-              <div class="relative mb-3 fieldset" data-te-input-wrapper-init>
-                <input
-                  type="text"
-                  class="peer input-field peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="fn"
-                  placeholder="First name"
-                  required
-                />
-                <label
-                  for="fn"
-                  class="input-label peer-focus:-translate-y-[1.2rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-                  >First name <span class="text-red">*</span>
-                </label>
-              </div>
-              <div class="relative mb-3 fieldset" data-te-input-wrapper-init>
-                <input
-                  type="text"
-                  class="peer input-field peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="fn"
-                  placeholder="Middle name"
-                  required
-                />
-                <label
-                  for="fn"
-                  class="input-label peer-focus:-translate-y-[1.2rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-                  >Middle name <span class="text-red">*</span>
-                </label>
-              </div>
-              <div class="relative mb-3 fieldset" data-te-input-wrapper-init>
-                <input
-                  type="text"
-                  class="peer input-field peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="fn"
-                  placeholder="Last name"
-                  required
-                />
-                <label
-                  for="fn"
-                  class="input-label peer-focus:-translate-y-[1.2rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-                  >Last name <span class="text-red">*</span>
-                </label>
-              </div>
-              <div class="fieldset">
-                <select
-                  data-te-select-init
-                  data-te-class-form-check-input="border-primary-100"
-                  required
-                >
-                  <option></option>
-                  <option value="1">Male</option>
-                  <option value="2">Female</option>
-                </select>
-                <label data-te-select-label-ref
-                  >Gender <span class="text-red">*</span></label
-                >
-              </div>
+                <div
+              class="rounded-none mb-[56px] bg-white">
+              <h2 class="mb-0" id="flush-headingTwo">
+                <button
+                  class="group uppercase tracking-[0.2rem] text-[14px] relative flex w-full items-center rounded-none border-0 border-b-[1px] bg-white pb-1 text-left text-[14px] text-tertiary-100 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-tertiary-100 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                  type="button"
+                  data-te-collapse-init
+                  data-te-collapse-collapsed
+                  data-te-target="#flush-collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="flush-collapseTwo">
+                  Personal
+                  <span
+                    class="text-center ml-auto shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                    <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99996 6.5L7.5 2.49258L7.5 0.500001L0.50004 0.5L0.5 2.49238L3.99996 6.5Z" fill="#48C2E0"/>
+                        </svg>
+                        
+                  </span>
+                </button>
+              </h2>
               <div
-                class="relative mb-3 fieldset"
-                data-te-datepicker-init
-                data-te-input-wrapper-init
-              >
-                <input
-                  type="text"
-                  class="peer input-field block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  placeholder="Select a date"
-                  required
-                />
-                <label
-                  for="floatingInput"
-                  class="input-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                  >Date of birth <span class="text-red">*</span></label
-                >
-              </div>
-              <div class="fieldset">
-                <select
-                  data-te-select-init
-                  data-te-class-form-check-input="border-primary-100"
-                  required
-                >
-                  <option></option>
-                  <option value="0">Single</option>
-                  <option value="1">Married</option>
-                  <option value="2">Unmarried</option>
-                  <option value="2">Divorced</option>
-                  <option value="2">Separated</option>
-                </select>
-                <label data-te-select-label-ref
-                  >Marital status <span class="text-red">*</span></label
-                >
-              </div>
-              <div class="relative mb-3 fieldset" data-te-input-wrapper-init>
-                <input
-                  type="text"
-                  class="peer input-field peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="fn"
-                  placeholder="Place of birth"
-                  required
-                />
-                <label
-                  for="fn"
-                  class="input-label peer-focus:-translate-y-[1.2rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-                  >Place of birth <span class="text-red">*</span>
-                </label>
-              </div>
-              <div class="fieldset">
-                <select
-                  data-te-select-init
-                  data-te-class-form-check-input="border-primary-100"
-                  required
-                >
-                  <option></option>
-                  <option value="0">USA</option>
-                  <option value="1">UAE</option>
-                  <option value="2">India</option>
-                  <option value="2">Pakistan</option>
-                  <option value="2">China</option>
-                </select>
-                <label data-te-select-label-ref
-                  >Country of birth <span class="text-red">*</span></label
-                >
+                id="flush-collapseTwo"
+                class="!visible hidden border-0"
+                data-te-collapse-item
+                aria-labelledby="flush-headingTwo"
+                 >
+                 <div class="grid grid-cols-2 gap-[24px] py-5">
+                  <div class="fieldset">
+                    <input
+                      type="file"
+                      id="input-id"
+                      class="input-file"
+                      name="file-data"
+                      data-show-caption="true"
+              
+                      required
+                    />
+                  </div>
+                  <div class="text-neutral-60 font-size-[12px]">
+                    <p>10 KB to 100 KB / JPG, PNG, PDF only</p>
+                    <p>Clear scanned copy of the passport front and back pages</p>
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="First name"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >First name <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Middle name"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Middle name <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Last name"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Last name <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="1">Male</option>
+                      <option value="2">Female</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Gender <span class="text-red">*</span></label
+                    >
+                  </div>
+    
+                  <div
+                    class="relative fieldset"
+                    data-te-datepicker-init
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Date of birth"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Date of birth <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">Single</option>
+                      <option value="1">Married</option>
+                      <option value="2">Unmarried</option>
+                      <option value="2">Divorced</option>
+                      <option value="2">Separated</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Marital status <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Place of birth"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Place of birth <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">USA</option>
+                      <option value="1">UAE</option>
+                      <option value="2">India</option>
+                      <option value="2">Pakistan</option>
+                      <option value="2">China</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Country of birth <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Mother's name"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Mother's name <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Father's name"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Father's name <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Passport number"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Passport number <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">Ordinary</option>
+                      <option value="1">Diplomat</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Passport type <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-datepicker-init
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Issue date"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Issue date <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-datepicker-init
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Expiry date"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Expiry date <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">India</option>
+                      <option value="1">Pakistan</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Current nationality <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">India</option>
+                      <option value="1">Pakistan</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Previous nationality <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">Muslim</option>
+                      <option value="1">Hindu</option>
+                      <option value="2">Christianity</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Religion <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">Catholic</option>
+                      <option value="1">Protestants</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Faith <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">Primary</option>
+                      <option value="1">Bachelors</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Education <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">Admin</option>
+                      <option value="1">Sales</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Profession <span class="text-red">*</span></label
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
-          <button type="submit">Submit</button>
+
+            <div
+              class="rounded-none mb-[56px] bg-white">
+              <h2 class="mb-0" id="flush-headingThree">
+                <button
+                  class="group relative uppercase tracking-[0.2rem] text-[14px] flex w-full items-center rounded-none border-0 border-b-[1px] bg-white pb-1 text-left text-[14px] text-tertiary-100 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-tertiary-100 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                  type="button"
+                  data-te-collapse-init
+                  data-te-collapse-collapsed
+                  data-te-target="#flush-collapseThree"
+                  aria-expanded="true"
+                  aria-controls="flush-collapseThree">
+                  Contact
+                  <span
+                    class="text-center ml-auto shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                    <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99996 6.5L7.5 2.49258L7.5 0.500001L0.50004 0.5L0.5 2.49238L3.99996 6.5Z" fill="#48C2E0"/>
+                        </svg>
+                  </span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="!visible hidden"
+                data-te-collapse-item
+                aria-labelledby="flush-headingThree"
+                 >
+                 <div class="grid grid-cols-2 gap-[24px] pt-5">
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="email"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Email"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Email <span class="text-red">*</span></label
+                    >
+                  </div>
+    
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Contact number"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Contact number <span class="text-red">*</span></label
+                    >
+                    <div class="text-neutral-60 font-size-[12px] mt-1">
+                      Contact number should start with +971 without spaces
+                    </div>
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">English</option>
+                      <option value="1">Hindi</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >First language <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">English</option>
+                      <option value="1">Hindi</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Preferred SMS language <span class="text-red">*</span></label
+                    >
+                  </div>
+              </div>
+                  <h3 class="uppercase mt-[40px] mb-[20px]">HOME COUNTRY ADDRESS</h3>
+                  <div class="grid grid-cols-2 gap-[24px]">
+    
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Address"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Address <span class="text-red">*</span></label
+                    >
+                  </div>
+    
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="City"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >City <span class="text-red">*</span></label
+                    >
+                  </div>
+    
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="State/Province"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >State/Province <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">India</option>
+                      <option value="1">Pakistan</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Country <span class="text-red">*</span></label
+                    >
+                  </div>
+                </div>
+                <h3 class="uppercase mt-[40px] mb-[20px]">UAE ADDRESS</h3>
+                <div class="grid grid-cols-2 gap-[24px] pb-5">
+                  
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Flat/Villa no."
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Flat/Villa no. <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Floor"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Floor <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Building/Villa"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Building/Villa <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Street"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Street <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div
+                    class="relative fieldset"
+                    data-te-input-wrapper-init
+                    data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                    data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  >
+                    <input
+                      type="text"
+                      class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      placeholder="Area"
+                      required
+                    />
+                    <label
+                      for="floatingInput"
+                      class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Area <span class="text-red">*</span></label
+                    >
+                  </div>
+                  <div class="fieldset">
+                    <select
+                      data-te-select-init
+                       
+                      required
+                    >
+                      <option></option>
+                      <option value="0">Abu Dhabi</option>
+                      <option value="1">Dubai</option>
+                    </select>
+                    <label data-te-select-label-ref
+                      >Emirate <span class="text-red">*</span></label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+            class="rounded-none bg-white mb-[56px]">
+            <h2 class="mb-0" id="flush-headingFour">
+              <button
+                class="group relative uppercase tracking-[0.2rem] flex w-full items-center rounded-none border-0 border-b-[1px] bg-white pb-1 text-left text-[14px] text-tertiary-100 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-tertiary-100 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#flush-collapseFour"
+                aria-expanded="true"
+                aria-controls="flush-collapseFour">
+                Documents
+                <span
+                  class="text-center ml-auto shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                  <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.99996 6.5L7.5 2.49258L7.5 0.500001L0.50004 0.5L0.5 2.49238L3.99996 6.5Z" fill="#48C2E0"/>
+                      </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="flush-headingFour"
+               >
+               <div class="grid grid-cols-2 gap-[24px]">
+                <div class="fieldset">
+                  <input
+                    type="file"
+                    id="input-id"
+                    class="input-file"
+                    name="file-data"
+                    data-show-caption="true"
+                    data-msg-placeholder="Passport size photo"
+                    required
+                  />
+                  <div class="text-neutral-60 font-size-[12px] mt-1">
+                    Passport size with white background, Max file size 500 KB
+                  </div>
+                </div>
+                <div class="fieldset">
+                  <input
+                    type="file"
+                    id="input-id"
+                    class="input-file"
+                    name="file-data"
+                    data-show-caption="true"
+                    data-msg-placeholder="Attested education certificate"
+                    required
+                  />
+                  <div class="text-neutral-60 font-size-[12px] mt-1">
+                    10 KB to 100 KB / JPG, PNG, PDF only
+                  </div>
+                </div>
+                <div class="fieldset">
+                  <input
+                    type="file"
+                    id="input-id"
+                    class="input-file"
+                    name="file-data"
+                    data-show-caption="true"
+                    data-msg-placeholder="Signed employment contract"
+                    required
+                  />
+                  <div class="text-neutral-60 font-size-[12px] mt-1">
+                    10 KB to 100 KB / JPG, PNG, PDF only
+                  </div>
+                </div>
+              </div>
+  
+              <h3 class="uppercase mt-[40px] mb-[20px]">
+                If applicant is inside UAE
+              </h3>
+              <div class="grid grid-cols-2 gap-[24px]">
+                <div class="fieldset">
+                  <select data-te-select-init multiple required>
+                    <option></option>
+                    <option value="0">Abu Dhabi</option>
+                    <option value="1">Dubai</option>
+                  </select>
+                  <label data-te-select-label-ref
+                    >Select file type to upload
+                    <span class="text-red">*</span></label
+                  >
+                </div>
+                <div class="text-neutral-60 font-size-[12px] mt-1">
+                  You can select multiple documents to upload
+                </div>
+                <div class="fieldset">
+                  <input
+                    type="file"
+                    id="input-id"
+                    class="input-file"
+                    name="file-data"
+                    data-show-caption="true"
+                    data-msg-placeholder="Upload file"
+                    required
+                  />
+                  <div class="text-neutral-60 font-size-[12px] mt-1">
+                    10 KB to 100 KB / JPG, PNG, PDF only
+                  </div>
+                </div>
+                <div
+                  class="relative fieldset"
+                  data-te-input-wrapper-init
+                  data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                >
+                  <input
+                    type="text"
+                    class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                    placeholder="File number"
+                    required
+                  />
+                  <label
+                    for="floatingInput"
+                    class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                    >File number <span class="text-red">*</span></label
+                  >
+                </div>
+              </div>
+              <h3 class="uppercase mt-[40px] mb-[20px]">
+                If applicant is outside UAE
+              </h3>
+              <div class="grid grid-cols-2 gap-[24px]">
+                <div
+                  class="relative fieldset"
+                  data-te-datepicker-init
+                  data-te-input-wrapper-init
+                  data-te-class-notch-leading-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  data-te-class-notch-middle-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                  data-te-class-notch-trailing-normal="border-none group-data-[te-input-focused]:shadow-none group-data-[te-input-focused]:border-none"
+                >
+                  <input
+                    type="text"
+                    class="peer input-field focus:placeholder:opacity-100 peer-focus:text-orange-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                    placeholder="Arrival date"
+                    required
+                  />
+                  <label
+                    for="floatingInput"
+                    class="input-label peer-data-[te-input-state-active]:-translate-y-[1.2rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                    >Arrival date <span class="text-red">*</span></label
+                  >
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-[24px]">
+            <div class="relative fieldset" data-te-input-wrapper-init>
+              <textarea
+                class="peer block min-h-[auto] w-full rounded-[12px] border-[1px] border-neutral-10 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Your message"></textarea>
+              <label
+                for="exampleFormControlTextarea1"
+                class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                >Comments</label
+              >
+            </div>
+
+            <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] mt-[24px]">
+              <input
+                class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                type="checkbox"
+                value=""
+                id="checkboxDefault" />
+              <label
+                class="inline-block pl-[1rem] hover:cursor-pointer"
+                for="checkboxDefault">
+                I hereby declare that information furnished above is true and correct in every respect and in case any information is found incorrect even partially the application may be rejected.
+              </label>
+            </div>
+
+         
+        <div class="col-start-3 col-end-11 mt-[40px]">
+
+          <div class="flex">
+            <button type="submit" class="btn btn-secondary">Discard</button>
+            <button type="submit" class="btn btn-secondary mx-5">Save</button>
+            <button type="submit" class="btn btn-primary ml-auto">Preview</button>
+          </div>
+
+          
+        </div>
+                </div>
+                </section>
+          
+
+            
+            
+          
+
         </div>
       </form>
     </div>
